@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Piaui para o Mundo">
+  <defs>
+    <radialGradient id="ocean" cx="42%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1bc1d6"/>
+      <stop offset="48%" stop-color="#0670c5"/>
+      <stop offset="100%" stop-color="#07276c"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="6" y1="16" x2="90" y2="80">
+      <stop offset="0" stop-color="#79c918"/>
+      <stop offset=".55" stop-color="#18b7b3"/>
+      <stop offset="1" stop-color="#006cc8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="48" cy="48" r="43" fill="url(#ocean)"/>
+  <circle cx="48" cy="48" r="45" fill="none" stroke="url(#ring)" stroke-width="4"/>
+  <circle cx="48" cy="48" r="40" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M20 43c8-12 23-16 38-10 10 4 16 9 21 16-7 1-14 0-21-3 3 10 0 18-8 25-15 4-27 0-34-10-4-6-3-13 4-18Z" fill="#f5dd28" opacity=".96"/>
+  <path d="M42 35c4 7 4 14 0 22-4-4-6-8-6-13 0-4 2-7 6-9Z" fill="#2f9d0d" stroke="#fff" stroke-width="2"/>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 4">
+    <path d="M41 45C30 28 18 24 10 26"/>
+    <path d="M41 45C44 30 51 20 64 15"/>
+    <path d="M41 45C57 40 71 42 86 54"/>
+    <path d="M41 45C49 56 51 67 47 82"/>
+  </g>
+  <g stroke="#fff" stroke-width="2">
+    <circle cx="10" cy="26" r="4" fill="#27c8db"/>
+    <circle cx="64" cy="15" r="4" fill="#ffc61a"/>
+    <circle cx="86" cy="54" r="4" fill="#78c420"/>
+    <circle cx="47" cy="82" r="4" fill="#fff"/>
+  </g>
+</svg>

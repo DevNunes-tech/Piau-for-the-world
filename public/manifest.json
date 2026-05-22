@@ -1,0 +1,24 @@
+{
+  "name": "Piauí para o Mundo - Guia de Turismo e Cultura",
+  "short_name": "Piauí para o Mundo",
+  "description": "Explore a diversidade cultural do estado do Piauí com Realidade Aumentada",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

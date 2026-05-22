@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-15T12:00:00.000Z",
+  "monthlyNumbers": [
+    {
+      "id": "monthCommitment",
+      "label": {
+        "pt": "Total ilustrativo em cultura e eventos (mês)",
+        "en": "Illustrative culture & events total (month)"
+      },
+      "value": "R$ 2,4 mi",
+      "valueHint": {
+        "pt": "Soma de referências SECULT + turismo",
+        "en": "SECULT + tourism references combined"
+      }
+    },
+    {
+      "id": "openCalls",
+      "label": {
+        "pt": "Editais e chamadas abertas",
+        "en": "Open calls & notices"
+      },
+      "value": "12"
+    },
+    {
+      "id": "municipalities",
+      "label": {
+        "pt": "Municípios com ações culturais/turismo",
+        "en": "Municipalities with culture/tourism actions"
+      },
+      "value": "18"
+    }
+  ],
+  "yearlyCultureInvestmentsBrl": [
+    { "month": 1, "valueBrl": 980000 },
+    { "month": 2, "valueBrl": 1120000 },
+    { "month": 3, "valueBrl": 1050000 },
+    { "month": 4, "valueBrl": 1280000 },
+    { "month": 5, "valueBrl": 1420000 },
+    { "month": 6, "valueBrl": 1650000 },
+    { "month": 7, "valueBrl": 2100000 },
+    { "month": 8, "valueBrl": 1880000 },
+    { "month": 9, "valueBrl": 1520000 },
+    { "month": 10, "valueBrl": 1340000 },
+    { "month": 11, "valueBrl": 1180000 },
+    { "month": 12, "valueBrl": 1240000 }
+  ],
+  "events": [
+    {
+      "id": "hubInvesteTeresina",
+      "title": {
+        "pt": "Encontro do Hub Investe Piauí",
+        "en": "Investe Piauí hub meetup"
+      },
+      "summary": {
+        "pt": "Rodada de negócios e inovação com foco em startups e parcerias institucionais.",
+        "en": "Business and innovation round focused on startups and institutional partnerships."
+      },
+      "dateIso": "2026-06-05",
+      "dateDisplay": { "pt": "5 jun 2026", "en": "Jun 5, 2026" },
+      "location": { "pt": "Teresina, PI", "en": "Teresina, PI" },
+      "category": "negocios",
+      "source": "investe",
+      "cityTags": ["teresina"],
+      "valueBrl": 320000,
+      "transparencyUrl": "https://transparencia.pi.gov.br/",
+      "sourceUrl": "https://investepiaui.com/",
+      "semanticAliases": [
+        "fórum de inovação investe piauí",
+        "fórum de inovação da investe piauí",
+        "tecnologia",
+        "startups",
+        "hub",
+        "inovação digital",
+        "eventos de tecnologia"
+      ]
+    },
+    {
+      "id": "festivalInvernoInvest",
+      "title": {
+        "pt": "Festival de Inverno (serra)",
+        "en": "Winter Festival (highlands)"
+      },
+      "summary": {
+        "pt": "Grande calendário cultural da serra com apoio a artistas locais e turismo.",
+        "en": "Major highlands culture calendar supporting local artists and tourism."
+      },
+      "dateIso": "2026-07-18",
+      "dateDisplay": { "pt": "18 jul 2026", "en": "Jul 18, 2026" },
+      "location": { "pt": "Pedro II, PI", "en": "Pedro II, PI" },
+      "category": "cultura",
+      "source": "secult",
+      "cityTags": [],
+      "valueBrl": 890000,
+      "transparencyUrl": "https://transparencia.pi.gov.br/",
+      "sourceUrl": "https://www.pi.gov.br/secultur/",
+      "semanticAliases": ["festival", "inverno", "cultura popular", "shows", "secult"]
+    },
+    {
+      "id": "editalPicos",
+      "title": {
+        "pt": "Edital SECULT — circuito regional",
+        "en": "SECULT call — regional circuit"
+      },
+      "summary": {
+        "pt": "Chamada para oficinas e mostras culturais com inscrições pela região de Picos.",
+        "en": "Workshops and cultural showcases with registrations around Picos."
+      },
+      "dateIso": "2026-05-20",
+      "dateDisplay": { "pt": "20 mai 2026", "en": "May 20, 2026" },
+      "location": { "pt": "Picos, PI", "en": "Picos, PI" },
+      "category": "cultura",
+      "source": "secult",
+      "cityTags": ["picos"],
+      "valueBrl": 210000,
+      "transparencyUrl": "https://transparencia.pi.gov.br/",
+      "sourceUrl": "https://www.pi.gov.br/secultur/",
+      "semanticAliases": ["edital", "picos", "oficinas culturais"]
+    },
+    {
+      "id": "rotaNegociosLitoral",
+      "title": {
+        "pt": "Rota de negócios no litoral",
+        "en": "Coastal business route"
+      },
+      "summary": {
+        "pt": "Feira de turismo e compras com foco em Parnaíba e municípios do delta.",
+        "en": "Tourism and trade fair focused on Parnaíba and delta municipalities."
+      },
+      "dateIso": "2026-08-12",
+      "dateDisplay": { "pt": "12 ago 2026", "en": "Aug 12, 2026" },
+      "location": { "pt": "Litoral piauiense", "en": "Piauí coast" },
+      "category": "turismo",
+      "source": "investe",
+      "cityTags": [],
+      "valueBrl": 450000,
+      "transparencyUrl": "https://transparencia.pi.gov.br/",
+      "sourceUrl": "https://investepiaui.com/",
+      "semanticAliases": ["delta", "praia", "setur", "turismo costeiro", "parna\u00edba"]
+    },
+    {
+      "id": "feiraInovacaoTeresina",
+      "title": {
+        "pt": "Feira de inovação aberta",
+        "en": "Open innovation fair"
+      },
+      "summary": {
+        "pt": "Demonstrações de soluções digitais e economia criativa na capital.",
+        "en": "Digital solutions and creative economy demos in the capital."
+      },
+      "dateIso": "2026-09-02",
+      "dateDisplay": { "pt": "2 set 2026", "en": "Sep 2, 2026" },
+      "location": { "pt": "Teresina, PI", "en": "Teresina, PI" },
+      "category": "negocios",
+      "source": "investe",
+      "cityTags": ["teresina"],
+      "valueBrl": 180000,
+      "transparencyUrl": "https://transparencia.pi.gov.br/",
+      "sourceUrl": "https://investepiaui.com/",
+      "semanticAliases": [
+        "fórum de inovação",
+        "tecnologia",
+        "software",
+        "eventos de tecnologia",
+        "economia criativa digital"
+      ]
+    }
+  ]
+}
