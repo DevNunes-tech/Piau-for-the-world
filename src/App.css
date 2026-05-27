@@ -24,6 +24,12 @@
   justify-content: flex-end;
 }
 
+.header-actions {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .app-main {
   width: min(100%, 1230px);
   margin: 0 auto;

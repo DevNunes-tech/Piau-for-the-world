@@ -7,6 +7,12 @@ export type Spot = {
   category: string
   summaryKey: string
   image?: string
+  photos?: string[]
+  videos?: Array<{
+    title: string
+    url: string
+    thumbnail?: string
+  }>
 }
 
 export type CreativeItem = {
@@ -55,6 +61,23 @@ export const REGIONS: Territory[] = [
         summaryKey: 'spot.portoLuisCorreia.summary',
         image:
           'https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Coqueiro_-_Luis_Correia%2C_Piau%C3%AD%2C_Brasil_-_coqueiral.jpg?width=960',
+        photos: [
+          'https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Coqueiro_-_Luis_Correia%2C_Piau%C3%AD%2C_Brasil_-_coqueiral.jpg?width=960',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Piaui_coast.jpg/1280px-Piaui_coast.jpg',
+          'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800',
+        ],
+        videos: [
+          {
+            title: 'Porto de Luís Correia - Pôr do sol',
+            url: 'https://www.youtube.com/embed/W7nzrRUEiNY',
+            thumbnail: 'https://img.youtube.com/vi/W7nzrRUEiNY/maxresdefault.jpg',
+          },
+          {
+            title: 'Turismo no litoral piauiense',
+            url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+            thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+          },
+        ],
       },
       {
         id: 'canyonRioPoti',

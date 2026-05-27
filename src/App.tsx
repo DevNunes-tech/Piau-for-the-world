@@ -6,13 +6,15 @@ import ItineraryBuilder from './components/ItineraryBuilder'
 import InnovationLab from './components/InnovationLab'
 import InvestePiauiCulture from './components/InvestePiauiCulture'
 import LanguageToggle from './components/LanguageToggle'
+import ScreenReaderToggle from './components/ScreenReaderToggle'
+import { ScreenReaderProvider } from './lib/screenReaderContext'
 import { useTranslation } from 'react-i18next'
 import { recordPageVisit } from './lib/gamification'
 import './App.css'
 
 export type Page = 'home' | 'map' | 'creative' | 'itinerary' | 'lab' | 'invest'
 
-export default function App() {
+function AppContent() {
   const { t } = useTranslation()
   const [currentPage, setCurrentPage] = useState<Page>('home')
   const [selectedCityId, setSelectedCityId] = useState<string | null>(null)
@@ -62,7 +64,10 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <LanguageToggle />
+          <div className="header-actions">
+            <ScreenReaderToggle />
+            <LanguageToggle />
+          </div>
         </div>
       </header>
 
@@ -84,5 +89,13 @@ export default function App() {
         ))}
       </nav>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <ScreenReaderProvider>
+      <AppContent />
+    </ScreenReaderProvider>
   )
 }
