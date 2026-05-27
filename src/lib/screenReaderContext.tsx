@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
+import type { ReactNode } from 'react'
 
 const isSpeechSupported = () =>
   typeof window !== 'undefined' &&
@@ -25,17 +26,6 @@ const cleanText = (text: string): string => {
 }
 
 const extractFullContent = (element: HTMLElement): string => {
-  // Lista de classes que indicam um container com conteúdo completo
-  const contentContainers = [
-    'article',
-    'card',
-    'detail',
-    'description',
-    'content',
-    'info',
-    'section',
-  ]
-
   // Procura por article no elemento ou próximo
   let contentElement = element.closest('article')
   if (!contentElement) {
