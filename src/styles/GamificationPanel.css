@@ -1,0 +1,117 @@
+.gamification-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gamification-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(8, 114, 51, 0.1);
+  border-radius: 12px;
+  color: #0a3018;
+}
+
+.gamification-points {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #087233;
+}
+
+.gamification-subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 1.05rem;
+  color: #1a2e1f;
+}
+
+.gamification-badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.gamification-badges li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.gamification-badges li.unlocked {
+  background: rgba(8, 114, 51, 0.12);
+  color: #062817;
+}
+
+.gamification-badges li.locked {
+  opacity: 0.45;
+}
+
+.gamification-badge-icon {
+  width: 1.25rem;
+  text-align: center;
+}
+
+.gamification-quiz-intro {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3d5a45;
+}
+
+.gamification-quiz {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gamification-quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.gamification-quiz-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.btn-quiz-submit,
+.btn-quiz-reset {
+  align-self: flex-start;
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-quiz-submit {
+  background: #087233;
+  color: #f7fff1;
+}
+
+.btn-quiz-submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-quiz-reset {
+  background: #fff;
+  border: 1px solid rgba(20, 92, 45, 0.25);
+  color: #062817;
+}
+
+.gamification-quiz-result {
+  padding: 0.75rem 0;
+}

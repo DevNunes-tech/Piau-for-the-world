@@ -1,0 +1,193 @@
+.region-card {
+  appearance: none;
+  position: relative;
+  width: 100%;
+  min-height: 128px;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 24px 24px 24px;
+  border: 1px solid rgba(5, 113, 50, 0.16);
+  border-radius: 24px;
+  background: rgba(255, 255, 252, 0.9);
+  box-shadow: 0 18px 38px rgba(25, 75, 38, 0.07);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.region-card::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: -44px;
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  background: var(--region-accent);
+  opacity: 0.78;
+}
+
+.region-card:hover,
+.region-card.selected {
+  border-color: rgba(5, 113, 50, 0.42);
+  box-shadow: 0 22px 46px rgba(25, 75, 38, 0.12);
+  transform: translateY(-2px);
+}
+
+.region-icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #087233;
+  color: #f6fff0;
+}
+
+.region-icon::before,
+.region-icon::after {
+  content: '';
+  position: absolute;
+  border-color: currentColor;
+}
+
+.region-icon-water::before,
+.region-icon-water::after {
+  width: 23px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.region-icon-water::before {
+  top: 20px;
+  box-shadow: 0 7px 0 -1px currentColor;
+}
+
+.region-icon-water::after {
+  top: 25px;
+}
+
+.region-icon-mountain::before {
+  width: 25px;
+  height: 20px;
+  border-left: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.region-icon-mountain::after {
+  width: 13px;
+  height: 13px;
+  border-left: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  top: 25px;
+  left: 17px;
+}
+
+.region-icon-tree::before {
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  border-radius: 48% 48% 42% 42%;
+  top: 15px;
+}
+
+.region-icon-tree::after {
+  width: 2px;
+  height: 16px;
+  background: currentColor;
+  top: 29px;
+  box-shadow: -6px -4px 0 -1px currentColor, 6px -7px 0 -1px currentColor;
+}
+
+.region-icon-leaf::before {
+  width: 22px;
+  height: 15px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 80% 10% 80% 10%;
+  transform: rotate(-24deg);
+}
+
+.region-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.region-copy strong {
+  color: #031c0b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.08rem, 2vw, 1.36rem);
+  line-height: 1.1;
+}
+
+.region-copy span {
+  color: #385843;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.region-copy small {
+  color: #057132;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.region-copy small::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  margin-right: 6px;
+  border: 1.6px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 80% 10% 80% 10%;
+  transform: rotate(-24deg);
+}
+
+.region-arrow {
+  position: relative;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+}
+
+.region-arrow::before {
+  content: '';
+  position: absolute;
+  inset: 5px 7px;
+  border-top: 2px solid #355c3f;
+  border-right: 2px solid #355c3f;
+  transform: rotate(45deg);
+}
+
+.region-card:focus-visible {
+  outline: 2px solid #057132;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .region-card {
+    grid-template-columns: 48px minmax(0, 1fr) 20px;
+    gap: 14px;
+    min-height: 118px;
+    padding: 20px 18px;
+    border-radius: 20px;
+  }
+
+  .region-icon {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,68 @@
+.map-view {
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-view h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  padding: 0.5rem;
+  min-width: 200px;
+}
+
+.popup-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.map-city-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+  padding: 0.55rem 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  background: #005c54;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.map-city-action:hover {
+  background: #0a6f64;
+}
+
+.popup-content p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.popup-content strong {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 400px;
+  }
+
+  .map-view h2 {
+    font-size: 1.4rem;
+  }
+}

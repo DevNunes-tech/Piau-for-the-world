@@ -1,0 +1,53 @@
+.innovation-lab {
+  padding: 1.25rem 0 2rem;
+}
+
+.innovation-lab-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.65rem;
+  color: #041b0c;
+}
+
+.innovation-lab-header p {
+  margin: 0;
+  color: #3d5a45;
+  line-height: 1.5;
+  max-width: 52rem;
+}
+
+.innovation-lab-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.innovation-lab-tabs button {
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 92, 45, 0.22);
+  background: #fff;
+  color: #1a2e1f;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.innovation-lab-tabs button.active {
+  background: #087233;
+  color: #f7fff1;
+  border-color: #087233;
+}
+
+.innovation-lab-panel {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(20, 92, 45, 0.12);
+  border-radius: 16px;
+  padding: 1.25rem 1.1rem;
+}
+
+@media (min-width: 720px) {
+  .innovation-lab-panel {
+    padding: 1.5rem 1.35rem;
+  }
+}

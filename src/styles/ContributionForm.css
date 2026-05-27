@@ -1,0 +1,62 @@
+.contribution-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 520px;
+}
+
+.contribution-intro,
+.contribution-note {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #3d5a45;
+}
+
+.contribution-note {
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.contribution-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a2e1f;
+}
+
+.contribution-label input,
+.contribution-label select,
+.contribution-label textarea {
+  font-weight: 400;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(20, 92, 45, 0.22);
+  font-size: 0.92rem;
+}
+
+.btn-contribute-submit {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border: 0;
+  border-radius: 10px;
+  background: #087233;
+  color: #f7fff1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contribution-thanks {
+  padding: 1rem 0;
+}
+
+.btn-contribute-again {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(20, 92, 45, 0.25);
+  background: #fff;
+  cursor: pointer;
+}

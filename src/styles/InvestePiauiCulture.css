@@ -1,0 +1,420 @@
+.invest-culture {
+  width: 100%;
+  padding-top: 26px;
+  text-align: left;
+}
+
+.invest-culture-header {
+  margin-bottom: 28px;
+}
+
+.invest-culture-header h1 {
+  margin: 0 0 8px;
+  color: #241b18;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.45rem, 2.8vw, 1.95rem);
+  letter-spacing: 0;
+}
+
+.invest-culture-header p {
+  margin: 0;
+  max-width: 720px;
+  color: #5a6b5b;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.invest-culture-disclaimer {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(8, 114, 51, 0.08);
+  border: 1px solid rgba(8, 114, 51, 0.14);
+  color: #2d4a38;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.invest-section {
+  margin-bottom: 36px;
+}
+
+.invest-section-title {
+  margin: 0 0 6px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.12rem;
+  color: #062817;
+}
+
+.invest-section-sub {
+  margin: 0 0 16px;
+  font-size: 0.88rem;
+  color: #6f7f72;
+}
+
+.invest-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.invest-filter-btn {
+  appearance: none;
+  border: 1px solid rgba(20, 92, 45, 0.22);
+  background: #fffef9;
+  color: #2d4a38;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.invest-filter-btn.active {
+  background: #087233;
+  color: #f7fff1;
+  border-color: #087233;
+}
+
+.invest-filter-btn:focus-visible {
+  outline: 2px solid #057132;
+  outline-offset: 2px;
+}
+
+.invest-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.invest-event-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #fffef9;
+  border: 1px solid rgba(20, 92, 45, 0.12);
+  box-shadow: 0 12px 32px rgba(29, 70, 37, 0.06);
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.invest-event-top {
+  padding: 14px 16px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.invest-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.invest-tag-cultura {
+  background: rgba(139, 90, 43, 0.12);
+  color: #6b4524;
+}
+
+.invest-tag-turismo {
+  background: rgba(8, 114, 163, 0.12);
+  color: #0b5f8a;
+}
+
+.invest-tag-negocios {
+  background: rgba(8, 114, 51, 0.14);
+  color: #045a28;
+}
+
+.invest-source-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #5a6b5b;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(36, 27, 24, 0.06);
+}
+
+.invest-event-body {
+  padding: 0 16px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.invest-event-body h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #1a241c;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.invest-event-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #6f7f72;
+}
+
+.invest-event-summary {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #3d4a40;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.invest-event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.invest-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  font-family: inherit;
+}
+
+.invest-btn-primary {
+  background: #087233;
+  color: #f7fff1;
+}
+
+.invest-btn-primary:hover {
+  background: #065c29;
+}
+
+.invest-btn-ghost {
+  background: transparent;
+  color: #087233;
+  border: 1px solid rgba(8, 114, 51, 0.35);
+}
+
+.invest-btn-ghost:hover {
+  background: rgba(8, 114, 51, 0.06);
+}
+
+.invest-btn:focus-visible {
+  outline: 2px solid #057132;
+  outline-offset: 2px;
+}
+
+.invest-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.invest-metric-card {
+  border-radius: 14px;
+  padding: 16px;
+  background: linear-gradient(145deg, #fffef9, #eef8e4);
+  border: 1px solid rgba(8, 114, 51, 0.14);
+}
+
+.invest-metric-value {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #062817;
+  font-variant-numeric: tabular-nums;
+}
+
+.invest-metric-label {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #5a6b5b;
+  line-height: 1.35;
+}
+
+.invest-map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.invest-map-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(20, 92, 45, 0.12);
+  background: #fffef9;
+  display: flex;
+  flex-direction: column;
+}
+
+.invest-map-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.invest-map-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.invest-map-card-body h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1a241c;
+}
+
+.invest-map-card-body p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #3d4a40;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.invest-feed-updated {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: #5a6b5b;
+}
+
+.invest-month-block {
+  margin-bottom: 32px;
+}
+
+.invest-metric-hint {
+  margin: 8px 0 0;
+  font-size: 0.75rem;
+  color: #7a8a7d;
+  line-height: 1.35;
+}
+
+.invest-value-pill {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #045a28;
+  background: rgba(8, 114, 51, 0.1);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.invest-chart-wrap {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fffef9;
+  border: 1px solid rgba(20, 92, 45, 0.12);
+}
+
+.invest-chart-head {
+  margin-bottom: 8px;
+}
+
+.invest-chart-title {
+  margin: 0 0 4px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.02rem;
+  color: #062817;
+}
+
+.invest-chart-sub {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #6f7f72;
+  line-height: 1.35;
+}
+
+.invest-chart-svg {
+  display: block;
+  max-width: 100%;
+}
+
+.invest-chart-bar {
+  fill: #0a8f45;
+  opacity: 0.88;
+}
+
+.invest-chart-bar:hover {
+  opacity: 1;
+}
+
+.invest-chart-axis-label,
+.invest-chart-month {
+  fill: #5a6b5b;
+}
+
+.invest-search-row {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(8, 114, 51, 0.06);
+  border: 1px solid rgba(8, 114, 51, 0.12);
+}
+
+.invest-search-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #2d4a38;
+  margin-bottom: 8px;
+}
+
+.invest-search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.invest-search-input {
+  flex: 1 1 200px;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(20, 92, 45, 0.22);
+  font: inherit;
+  font-size: 0.88rem;
+  background: #fffef9;
+  color: #1a241c;
+}
+
+.invest-search-input:focus-visible {
+  outline: 2px solid #057132;
+  outline-offset: 2px;
+}
+
+.invest-search-hint {
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  color: #6f7f72;
+  line-height: 1.4;
+}
+
+.invest-search-error {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: #8a2f2f;
+}
+
+@media (max-width: 640px) {
+  .invest-culture {
+    padding-top: 18px;
+  }
+}
